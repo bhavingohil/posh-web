@@ -1,0 +1,166 @@
+.loginFormContainer {
+  height: 80vh;
+}
+
+.signup {
+  height: 100vh !important;
+}
+
+.signupFormContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.loginForm {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.loginForm input {
+  background: #ffffff;
+  border: 1.5px solid #d8d8d8;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-family: "Petrona";
+}
+
+.loginForm input:last-of-type {
+  margin: 0;
+}
+
+.loginForm h1 {
+  font-family: "Marcellus SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #bb7f7f;
+  margin-bottom: 25px;
+}
+
+.loginForm label {
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.loginForm form {
+  width: 50%;
+}
+
+.loginForm button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #000000;
+  width: 30%;
+  margin: 15px 0;
+  padding: 15px;
+  color: #ffffff;
+  border: none;
+  margin-top: 30px;
+}
+
+.loginForm button:hover {
+  background-color: #bb7f7f;
+  outline: 1px solid #bb7f7f;
+  border: none;
+}
+
+.loginForm p {
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.loginForm > p:first-of-type {
+  text-decoration: underline;
+}
+
+.loginForm > p:first-of-type:hover {
+  color: #bb7f7f;
+  cursor: pointer;
+}
+
+.loginForm span {
+  text-decoration: underline;
+}
+
+.loginForm span:hover {
+  color: #bb7f7f;
+  cursor: pointer;
+}
+
+.resetPassword {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.resetPassword:hover {
+  color: #bb7f7f;
+}
+
+@media screen and (min-width: 280px) {
+  .loginForm {
+    width: 100%;
+  }
+
+  .loginForm h1 {
+    font-size: 35px;
+  }
+
+  .loginForm form {
+    width: 90%;
+  }
+
+  .loginForm button {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .loginFormContainer {
+    height: 80vh;
+  }
+
+  .loginForm {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .loginFormContainer {
+    height: 80vh;
+  }
+
+  .loginForm {
+    width: 60%;
+  }
+
+  .loginForm h1 {
+    font-size: 40px;
+  }
+}

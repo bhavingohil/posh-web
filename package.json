@@ -1,0 +1,48 @@
+{
+  "name": "posh-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate": "next build && next export"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.1",
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@mantine/carousel": "^5.7.2",
+    "@react-google-maps/api": "^2.17.0",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@sendgrid/client": "^7.7.0",
+    "@sendgrid/mail": "^7.7.0",
+    "@shopify/shopify-api": "^6.2.0",
+    "axios": "^1.2.0",
+    "embla-carousel-react": "^7.0.5",
+    "eslint": "8.27.0",
+    "eslint-config-next": "13.0.3",
+    "fs": "^0.0.1-security",
+    "google-map-react": "^2.2.0",
+    "graphql": "^15.8.0",
+    "moment": "^2.29.4",
+    "next": "13.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-dropdown": "^1.11.0",
+    "react-icons": "^4.6.0",
+    "react-query": "^3.39.3",
+    "react-redux": "^8.0.5",
+    "react-slick": "^0.29.0",
+    "react-slider": "^2.0.4",
+    "shopify-buy": "^2.17.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/react": "18.0.25",
+    "dotenv": "^16.0.3",
+    "prettier": "^3.0.0",
+    "typescript": "^4.9.3"
+  }
+}

@@ -1,0 +1,23 @@
+.partnersWrapper {
+  background: #fdf5f5;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1% 0;
+  display: flex;
+}
+
+.partnerLogo:last-of-type {
+  margin-left: -2%;
+}
+
+@media screen and (max-width: 888px) {
+  .partnersWrapper {
+    padding: 3% 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partnersWrapper {
+    padding: 5% 0;
+  }
+}

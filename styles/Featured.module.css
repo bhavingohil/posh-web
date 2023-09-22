@@ -1,0 +1,56 @@
+.featureCard {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  position: relative;
+}
+
+.featuredOverlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 997;
+  position: absolute;
+}
+
+.featureCard > h1 {
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  z-index: 998;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.featureCard > p {
+  font-family: "Petrona";
+  font-style: normal;
+  z-index: 998;
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 39px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.featureTitleHeader {
+  display: block;
+}
+
+@media screen and (max-width: 801px) {
+  .featureTitleHeader {
+    display: none;
+  }
+}

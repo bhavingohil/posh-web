@@ -1,0 +1,384 @@
+.checkoutPage {
+  display: flex;
+  gap: 10%;
+  padding: 2% 5%;
+  z-index: -1;
+}
+
+.shippingInfoContainer {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+  padding: 2%;
+  width: 65%;
+  position: relative;
+  height: fit-content;
+}
+
+.hr {
+  border-color: rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.cartSignin {
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #777777;
+  margin-bottom: 15px;
+}
+
+.cartSignin span {
+  color: black;
+}
+
+.cartInput {
+  background: #f2f2f2;
+  border: 1px solid #d7d7d7;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.shippingInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  column-gap: 18px;
+  row-gap: 20px;
+}
+
+.shippingInfoGrid input:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.basketInfoContainer {
+  width: 46%;
+  padding: 0% 3%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  background-color: white;
+  z-index: 998;
+  position: fixed;
+  right: 5%;
+  top: 104px;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+.basketInfoContainerNotFixed {
+  width: 100%;
+  padding: 0% 3%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  background-color: white;
+  z-index: 998;
+}
+
+.navBasketInfoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.navBasketInfoHeader h1 {
+  font-family: "Marcellus SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 53px;
+  letter-spacing: 0.02em;
+  color: black;
+}
+
+.navBasketInfoHeader p {
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.basketItemContainer {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-top: 1px solid #e9e9e9;
+  position: relative;
+}
+
+.deliveryDetailsTitle {
+  font-family: "Marcellus SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  color: #bb7f7f;
+}
+
+.basketItemCounter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.basketItemCounter p:nth-child(2) {
+  border: 1px solid #c7c7c7;
+  padding: 5px 10px;
+}
+
+.checkoutCardItemTitle {
+  font-size: 18px;
+}
+
+.basketItemCounter p:last-of-type {
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.basketTotalInfo {
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 20px 0px;
+}
+
+.basketTotalInfo div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basketTotalInfo div p {
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.basketTotalInfo div:last-child p {
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.basketButton {
+  background: #252525;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 22px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.basketButton:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.basketPictureWrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.modalBasketContainer {
+  position: absolute;
+  background-color: white;
+  right: 4%;
+  top: 150px;
+  width: 40%;
+  z-index: 999;
+}
+
+.mobileCart {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.mobileCartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 3%;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.checkoutCardPrice {
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin: auto 0;
+  color: #000000;
+}
+
+.basketItemLeft p {
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.basketItemLeft {
+  display: flex;
+  align-items: center;
+}
+
+.basketItemLeft p {
+  margin-bottom: 6px;
+}
+
+@media screen and (max-width: 1375px) {
+  .modalBasketContainer {
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 1265px) {
+  .checkoutPage {
+    gap: 2%;
+  }
+
+  .modalBasketContainer {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 1287px) {
+  .checkoutPage {
+    gap: 5%;
+    padding: 0% 2%;
+  }
+
+  .shippingInfoContainer {
+    width: 70%;
+  }
+
+  .basketInfoContainer {
+    width: 59%;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .modalBasketContainer {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1001px) {
+  .navBasketInfoHeader {
+    border-bottom: 1px solid #e9e9e9;
+  }
+
+  .basketItemContainer {
+    border-bottom: 1px solid #e9e9e9;
+    border-top: none;
+  }
+
+  .basketInfoContainerNotFixed {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .modalBasketContainer {
+    width: 62%;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .modalBasketContainer {
+    width: 68%;
+  }
+}
+
+@media screen and (max-width: 958px) {
+  .basketInfoContainer {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 801px) {
+  .mobileCheckoutBasket {
+    padding: 0% 5%;
+  }
+
+  .basketInfoContainer {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .checkoutCardPrice {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+  }
+
+  .basketItemContainer {
+    justify-content: flex-start;
+    gap: 50px;
+    padding-bottom: 40px;
+  }
+
+  .basketItemCounter {
+    gap: 10px;
+    margin-top: 5px;
+  }
+
+  .checkoutCardItemTitle {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .basketItemLeft p {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .basketPictureWrapper {
+    height: 70px;
+    width: 70px;
+  }
+}

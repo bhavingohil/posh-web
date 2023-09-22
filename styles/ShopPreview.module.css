@@ -1,0 +1,125 @@
+.shopPreviewContainer {
+  margin-top: 5%;
+  padding-bottom: 20px;
+}
+
+.shopPreviewContainer > h1 {
+  font-family: "Marcellus SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  color: #bb7f7f;
+}
+
+@media screen and (max-width: 400px) {
+  .shopPreviewContainer > h1 {
+    font-size: 35px;
+  }
+}
+
+.shopPreviewContainer > p {
+  font-family: "Petrona";
+  width: 90%;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #777777;
+}
+
+.shopPreviewMenu {
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  display: flex;
+  margin-top: 40px;
+}
+
+.shopPreviewMenu > li {
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #8f4141;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.shopPreviewMenu > li.active {
+  border-bottom: 2px solid #b17a7a;
+}
+
+.previewShopSection {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 292px));
+  padding: 0 30px;
+  column-gap: 20px;
+  place-items: start;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.webShopAllBtn {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 12px 36px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.mobileShopAllBtn {
+  background: #bb7f7f;
+  border: 1px solid #bb7f7f;
+  padding: 12px 36px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  color: white;
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.webShopAllBtn:hover {
+  background: #bb7f7f;
+  border: 1px solid #bb7f7f;
+  color: white;
+}
+
+@media screen and (min-width: 360px) {
+  .previewShopSection {
+    width: 100%;
+    place-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 50px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .previewShopSection {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 292px));
+    padding: 0 30px;
+    column-gap: 20px;
+    place-items: start;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}

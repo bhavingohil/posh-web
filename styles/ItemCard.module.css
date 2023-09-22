@@ -1,0 +1,90 @@
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+
+.itemPhotoContainer {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.itemPhotoContainer p {
+  background: #bb7f7f;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0px;
+  opacity: 1;
+  transition: all 500ms ease;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 7px 0;
+  color: #ffffff;
+}
+
+.itemFavoriteBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px;
+  z-index: 998;
+  cursor: pointer;
+}
+
+.itemContainer > h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.itemContainer > p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #bb7f7f;
+}
+
+.shopItemWrapper {
+  position: relative;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.customImg {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.plusIcon {
+  width: 100%;
+  margin-top: 10px;
+  fill: #bb7f7f;
+  cursor: pointer;
+}
+
+.plusIcon:hover {
+  fill: rgba(0, 0, 0, 0.3);
+}

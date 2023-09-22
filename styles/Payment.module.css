@@ -1,0 +1,66 @@
+.paymentContainer {
+  background: #f2f2f2;
+  padding: 17px 13%;
+  margin-bottom: 20px;
+}
+
+.paymentPage {
+  display: flex;
+  gap: 10%;
+  padding: 2% 5%;
+  z-index: -1;
+}
+
+.shippingInfoContainer2 {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+  padding: 2%;
+  width: 70%;
+  position: relative;
+}
+
+.paymentContainer > h1 {
+  font-family: "Marcellus SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 53px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #bb7f7f;
+}
+
+.termsOfService {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  font-family: "Petrona";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.mobileShippingButton {
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .paymentContainer {
+    padding: 17px 5%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .shippingInfoContainer2 {
+    width: 100%;
+  }
+}
